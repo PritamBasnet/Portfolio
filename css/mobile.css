@@ -1,0 +1,57 @@
+/* landing section responsive */
+
+/* my work section responsive */
+@media screen and (max-width:900px) {
+    .work .work-container .photography-grid .grid-show {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .work .work-container .design-grid .grid-show {
+        grid-template-columns: repeat(3, 1fr);
+      }
+}
+@media screen and (max-width:750px) {
+    .work .work-container .photography-grid .grid-show {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .work .work-container .design-grid .grid-show {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .work .work-container .web-grid .grid-show {
+        grid-template-columns: repeat(2,1fr);
+      }
+      #landing-section {
+        flex-direction: column;
+      }
+      #landing-section article {
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+      }
+}
+@media screen and (max-width:650px) {
+    .work .work-container .photography-grid .grid-show {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .work .work-container .design-grid .grid-show {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .work .work-container .web-grid .grid-show {
+        grid-template-columns: repeat(1,1fr);
+      }
+      .take-row {
+        grid-row-start: span 1;
+      }
+      .take-column {
+        grid-column-start: span 1;
+      }
+      .category-list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+}
+@media screen and (max-width:400px) {
+   .landing-btns {
+    flex-direction: column;
+   }
+}
