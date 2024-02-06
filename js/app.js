@@ -1,4 +1,10 @@
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
+// Fix mobile version
+ScrollTrigger.observe({
+  trigger: 'body',
+  type: "touch,pointer", // comma-delimited list of what to listen for ("wheel,touch,scroll,pointer")
+  onUp: () => { ScrollTrigger.update(); },
+});
 function sheryJs() {
   Shery.mouseFollower({
     //Parameters are optional.
@@ -59,8 +65,6 @@ function gsapOnSkill() {
       scrub:1,
       end:"top -100%",
       pin:true,
-      type: "touch,pointer", // comma-delimited list of what to listen for ("wheel,touch,scroll,pointer")
-      onUp: () => { ScrollTrigger.update(); },
     }
   });
 }
