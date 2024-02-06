@@ -55,7 +55,6 @@ jsOnWorkSection();
 
 function gsapOnSkill() {
   let getWidth = document.querySelector('.skill>div').offsetWidth;
-  alert(getWidth);
   gsap.to('.skill div',{
     transform:`translateX(-${getWidth+700}px)`,
     ease: "power1.inOut", 
