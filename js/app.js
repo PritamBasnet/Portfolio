@@ -10,7 +10,7 @@ function sheryJs() {
   //   //Parameters are optional.
   //   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   //   duration: 0.5,
-  // });
+  // }); 
   Shery.textAnimate("#my-name" /* Element to target.*/, {
     //Parameters are optional.
     style: 2,
@@ -54,8 +54,10 @@ function jsOnWorkSection() {
 jsOnWorkSection();
 
 function gsapOnSkill() {
+  let getWidth = document.querySelector('.skill>div').offsetWidth;
+  alert(getWidth);
   gsap.to('.skill div',{
-    transform:"translateX(-120%)",
+    transform:`translateX(-${getWidth+700}px)`,
     ease: "power1.inOut", 
     // duration:4,
     scrollTrigger:{
