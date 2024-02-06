@@ -45,3 +45,20 @@ function jsOnWorkSection() {
   }
 }
 jsOnWorkSection();
+
+function gsapOnSkill() {
+  gsap.to('.skill div',{
+    transform:"translateX(-120%)",
+    ease: "power1.inOut", 
+    // duration:4,
+    scrollTrigger:{
+      trigger:".skill",
+      scroller:"body",
+      start:"top 0%",
+      scrub:2,
+      end:"top -100%",
+      pin:true,
+    }
+  });
+}
+gsapOnSkill();
