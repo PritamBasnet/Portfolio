@@ -54,9 +54,13 @@ function jsOnWorkSection() {
 jsOnWorkSection();
 
 function gsapOnSkill() {
-  let getWidth = document.querySelector('.skill>div').offsetWidth;
+  let getWidth = 0;
+  document.querySelectorAll('.skill div img').forEach(()=>{
+    getWidth = getWidth +150 +30;
+  })
+
   gsap.to('.skill div',{
-    transform:`translateX(-${getWidth+700}px)`,
+    transform:`translateX(-${getWidth}px)`,
     ease: "power1.inOut", 
     // duration:4,
     scrollTrigger:{

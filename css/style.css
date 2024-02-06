@@ -287,11 +287,11 @@ header #my-name {
     row-gap: 30px;
 }
 .skill div img {
-  margin: 0 80px;
+  margin: 0 30px;
 }
 .skill div img:nth-child(1) {
   margin: 0;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 footer {
   width: 100%;
