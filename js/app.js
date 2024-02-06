@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 function sheryJs() {
   Shery.mouseFollower({
     //Parameters are optional.
@@ -55,7 +56,7 @@ function gsapOnSkill() {
       trigger:".skill",
       scroller:"body",
       start:"top 0%",
-      scrub:2,
+      scrub:1,
       end:"top -100%",
       pin:true,
     }
