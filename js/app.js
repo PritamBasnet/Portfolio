@@ -64,7 +64,7 @@ function gsapOnSkill() {
     ease: "power1.inOut", 
     // duration:4,
     scrollTrigger:{
-      trigger:".skill",
+      trigger:"main",
       scroller:"body",
       start:"top 0%",
       scrub:1,
