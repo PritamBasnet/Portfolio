@@ -8,11 +8,11 @@ ScrollTrigger.observe({
   },
 });
 function sheryJs() {
-  Shery.mouseFollower({
-    //Parameters are optional.
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    duration: 0.5,
-  });
+  // Shery.mouseFollower({
+  //   //Parameters are optional.
+  //   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  //   duration: 0.5,
+  // });
   Shery.textAnimate("#my-name" /* Element to target.*/, {
     //Parameters are optional.
     style: 2,
